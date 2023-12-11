@@ -1,7 +1,7 @@
 <div align="center">
 <img src="./docs/images/icon.svg" alt="icon"/>
 
-<h1 align="center">ChatGPT Next Web LangChain</h1>
+<h1 align="center">問問AI - Ask AI LangChain</h1>
 
 一键免费部署你的跨平台私人 ChatGPT 应用（基于 LangChain 实现插件功能）。
 
@@ -35,7 +35,7 @@
 
 ## 主要功能
 
-- 除插件工具外，与原项目保持一致 [ChatGPT-Next-Web 主要功能](https://github.com/Yidadaa/ChatGPT-Next-Web#主要功能)
+- 除插件工具外，与原项目保持一致 [askai-web 主要功能](https://github.com/sinhong2011/askai-web#主要功能)
 - 支持 GPT-4V(视觉) 模型
   - 需要配置对象存储服务，请参考 [对象存储服务配置指南](./docs/s3-oss.md) 配置
 
@@ -116,7 +116,7 @@
 
 > 配置密码后，用户需要在设置页手动填写访问码才可以正常聊天，否则会通过消息提示未授权状态。
 
-> **警告**：请务必将密码的位数设置得足够长，最好 7 位以上，否则[会被爆破](https://github.com/Yidadaa/ChatGPT-Next-Web/issues/518)。
+> **警告**：请务必将密码的位数设置得足够长，最好 7 位以上，否则[会被爆破](https://github.com/sinhong2011/askai-web/issues/518)。
 
 本项目提供有限的权限控制功能，请在 Vercel 项目控制面板的环境变量页增加名为 `CODE` 的环境变量，值为用英文逗号分隔的自定义密码：
 

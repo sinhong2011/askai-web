@@ -530,9 +530,9 @@ export function ImagePreviewer(props: {
           </div>
 
           <div>
-            <div className={styles["main-title"]}>ChatGPT Next Web</div>
+            <div className={styles["main-title"]}>問問AI - Ask AI</div>
             <div className={styles["sub-title"]}>
-              github.com/Yidadaa/ChatGPT-Next-Web
+              github.com/sinhong2011/askai-web
             </div>
             <div className={styles["icons"]}>
               <ExportAvatar avatar={config.avatar} />
@@ -553,7 +553,7 @@ export function ImagePreviewer(props: {
             <div className={styles["chat-info-item"]}>
               {Locale.Exporter.Time}:{" "}
               {new Date(
-                props.messages.at(-1)?.date ?? Date.now(),
+                props.messages.at(-1)?.date || Date.now(),
               ).toLocaleString()}
             </div>
           </div>
