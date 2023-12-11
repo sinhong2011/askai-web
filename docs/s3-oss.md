@@ -17,7 +17,7 @@
 5. 进入"用户管理"，"操作员"创建一个"操作员"并赋予相应权限
 6. 编辑"操作员"复制"AccessKey"和"SecretAccessKey"
 7. 如果读写权限未勾选则选中后确定
-8. 回到 ChatGPT-Next-Web-LangChain 项目修改环境变量。按照以下信息填写：
+8. 回到 askai-web 项目修改环境变量。按照以下信息填写：
    - `S3_ENDPOINT=http://s3.api.upyun.com`
    - `S3_ACCESS_KEY_ID=AccessKey`
    - `S3_SECRET_ACCESS_KEY=SecretAccessKey`
@@ -60,7 +60,7 @@
 
 7. 复制 "访问密钥 ID" 和 "机密访问密钥"，点击 "完成"。
 
-8. 回到 ChatGPT-Next-Web-LangChain 项目修改环境变量。按照以下信息填写：
+8. 回到 askai-web 项目修改环境变量。按照以下信息填写：
 
    - `R2_ACCOUNT_ID=账户ID`
    - `R2_ACCESS_KEY_ID=访问密钥 ID`

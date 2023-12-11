@@ -54,8 +54,8 @@ if ! command -v node >/dev/null || ! command -v git >/dev/null || ! command -v p
 fi
 
 # Clone the repository and install dependencies
-git clone https://github.com/Hk-Gosuto/ChatGPT-Next-Web-LangChain
-cd ChatGPT-Next-Web-LangChain
+git clone https://github.com/sinhong2011/askai-web
+cd askai-web
 pnpm install
 
 # Prompt user for environment variables

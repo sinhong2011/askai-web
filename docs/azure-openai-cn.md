@@ -2,7 +2,7 @@
 
 该方案为临时方案，并不保证稳定，也会不定期更新。
 
-如使用出现问题请提 [Issues](https://github.com/Hk-Gosuto/ChatGPT-Next-Web-LangChain/issues)。
+如使用出现问题请提 [Issues](https://github.com/sinhong2011/askai-web/issues)。
 
 ## 如何配置
 
