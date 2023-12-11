@@ -8,9 +8,7 @@ RUN npm install -g pnpm
 
 WORKDIR /app
 
-COPY package.json pnpm.lock ./
-
-
+COPY package.json pnpm-lock.yaml ./
 
 RUN pnpm config set registry 'https://registry.npmmirror.com/'
 RUN pnpm install
