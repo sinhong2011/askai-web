@@ -17,6 +17,8 @@ FROM base AS builder
 
 RUN apk update && apk add --no-cache git
 
+RUN npm install -g pnpm
+
 ENV OPENAI_API_KEY=""
 ENV CODE=""
 ENV NEXT_PUBLIC_ENABLE_NODEJS_PLUGIN=1
@@ -28,6 +30,7 @@ COPY . .
 RUN pnpm build
 
 FROM base AS runner
+
 WORKDIR /app
 
 RUN apk add proxychains-ng
