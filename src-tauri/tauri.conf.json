@@ -9,7 +9,7 @@
   },
   "package": {
     "productName": "問問AI - Ask AI",
-    "version": "2.9.12"
+    "version": "2.9.13"
   },
   "tauri": {
     "allowlist": {
@@ -55,7 +55,7 @@
     "bundle": {
       "active": true,
       "category": "DeveloperTool",
-      "copyright": "2023, Zhang Yifei All Rights Reserved.",
+      "copyright": "2023, niskan516 All Rights Reserved.",
       "deb": {
         "depends": []
       },
@@ -67,7 +67,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.yida.chatgpt.next.web",
+      "identifier": "com.niskan516.chatgpt.next.web",
       "longDescription": "問問AI - Ask AI is a cross-platform ChatGPT client, including Web/Win/Linux/OSX/PWA.",
       "macOS": {
         "entitlements": null,

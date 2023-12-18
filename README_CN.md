@@ -157,12 +157,12 @@ BASE_URL=https://b.nextweb.fun/api/proxy
 > ⚠️ 注意：docker 版本在大多数时间都会落后最新的版本 1 到 2 天，所以部署后会持续出现“存在更新”的提示，属于正常现象。
 
 ```shell
-docker pull yidadaa/chatgpt-next-web
+docker pull niskan516/askai-web
 
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY=sk-xxxx \
    -e CODE=页面访问密码 \
-   yidadaa/chatgpt-next-web
+   niskan516/askai-web
 ```
 
 你也可以指定 proxy：
@@ -173,7 +173,7 @@ docker run -d -p 3000:3000 \
    -e CODE=页面访问密码 \
    --net=host \
    -e PROXY_URL=http://127.0.0.1:7890 \
-   yidadaa/chatgpt-next-web
+   niskan516/askai-web
 ```
 
 如果你的本地代理需要账号密码，可以使用：
@@ -205,7 +205,6 @@ bash <(curl -s https://raw.githubusercontent.com/sinhong2011/askai-web/main/scri
 [见项目贡献者列表](https://github.com/sinhong2011/askai-web/graphs/contributors)
 
 ### 相关项目
-
 - [one-api](https://github.com/songquanpeng/one-api): 一站式大模型额度管理平台，支持市面上所有主流大语言模型
 
 ## 开源协议
