@@ -2,7 +2,7 @@ name: Docker Nightly Image CI
 
 on:
   schedule:
-    - cron: '0 1 * * *'
+    - cron: "0 1 * * *"
 
 jobs:
   push_to_registry:
@@ -21,7 +21,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: gosuto/chatgpt-next-web-langchain
+          images: niskan516/askai-web
           tags: |
             type=raw,value=latest
             type=ref,event=tag

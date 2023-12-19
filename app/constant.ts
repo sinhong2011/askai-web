@@ -60,7 +60,7 @@ export const LAST_INPUT_KEY = "last-input";
 export const LAST_INPUT_IMAGE_KEY = "last-input-image";
 export const UNFINISHED_INPUT = (id: string) => "unfinished-input-" + id;
 
-export const STORAGE_KEY = "chatgpt-next-web";
+export const STORAGE_KEY = "askai-web";
 
 export const REQUEST_TIMEOUT_MS = 60000;
 

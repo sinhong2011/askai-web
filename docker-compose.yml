@@ -1,9 +1,9 @@
 version: "3.9"
 services:
-  chatgpt-next-web:
+  askai-web:
     profiles: ["no-proxy"]
-    container_name: chatgpt-next-web
-    image: gosuto/chatgpt-next-web-langchain
+    container_name: askai-web
+    image: niskan516/askai-web
     ports:
       - 3000:3000
     environment:
@@ -17,10 +17,10 @@ services:
       - DISABLE_FAST_LINK=$DISABLE_FAST_LINK
       - OPENAI_SB=$OPENAI_SB
 
-  chatgpt-next-web-proxy:
+  askai-web-proxy:
     profiles: ["proxy"]
-    container_name: chatgpt-next-web-proxy
-    image: gosuto/chatgpt-next-web-langchain
+    container_name: askai-web-proxy
+    image: niskan516/askai-web
     ports:
       - 3000:3000
     environment:

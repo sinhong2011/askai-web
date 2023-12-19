@@ -19,7 +19,7 @@
 [MacOS-image]: https://img.shields.io/badge/-MacOS-black?logo=apple
 [Linux-image]: https://img.shields.io/badge/-Linux-333?logo=ubuntu
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsinhong2011%2Faskai-web&env=OPENAI_API_KEY,CODE&project-name=chatgpt-next-web-langchain&repository-name=askai-web)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsinhong2011%2Faskai-web&env=OPENAI_API_KEY,CODE&project-name=askai-web&repository-name=askai-web)
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/sinhong2011/askai-web)
 
@@ -100,7 +100,7 @@
 
 1. 准备好你的 [OpenAI API Key](https://platform.openai.com/account/api-keys);
 2. 点击右侧按钮开始部署：
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsinhong2011%2Faskai-web&env=OPENAI_API_KEY,CODE&project-name=chatgpt-next-web-langchain&repository-name=askai-web)，直接使用 Github 账号登录即可，记得在环境变量页填入 API Key 和[页面访问密码](#配置页面访问密码) CODE；
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsinhong2011%2Faskai-web&env=OPENAI_API_KEY,CODE&project-name=askai-web&repository-name=askai-web)，直接使用 Github 账号登录即可，记得在环境变量页填入 API Key 和[页面访问密码](#配置页面访问密码) CODE；
 3. 部署完毕后，即可开始使用；
 4. （可选）[绑定自定义域名](https://vercel.com/docs/concepts/projects/domains/add-a-domain)：Vercel 分配的域名 DNS 在某些区域被污染了，绑定自定义域名即可直连。
 
@@ -195,7 +195,7 @@ OpenAI 接口代理 URL，如果你手动配置了 openai 接口代理，请填�
 docker run -d -p 3000:3000 \
    -e OPENAI_API_KEY="sk-xxxx" \
    -e CODE="页面访问密码" \
-   gosuto/chatgpt-next-web-langchain
+   niskan516/askai-web
 ```
 
 你也可以指定 proxy：
@@ -206,7 +206,7 @@ docker run -d -p 3000:3000 \
    -e CODE="页面访问密码" \
    --net=host \
    -e PROXY_URL="http://127.0.0.1:7890" \
-   gosuto/chatgpt-next-web-langchain
+   niskan516/askai-web
 ```
 
 如果你的本地代理需要账号密码，可以使用：
