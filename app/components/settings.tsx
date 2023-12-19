@@ -705,8 +705,8 @@ export function Settings() {
               checkingUpdate
                 ? Locale.Settings.Update.IsChecking
                 : hasNewVersion
-                ? Locale.Settings.Update.FoundUpdate(remoteId ?? "ERROR")
-                : Locale.Settings.Update.IsLatest
+                  ? Locale.Settings.Update.FoundUpdate(remoteId ?? "ERROR")
+                  : Locale.Settings.Update.IsLatest
             }
           >
             {checkingUpdate ? (
@@ -914,7 +914,7 @@ export function Settings() {
             </ListItem>
           )}
 
-          {!accessStore.hideUserApiKey && (
+          {/* {!accessStore.hideUserApiKey && (
             <>
               {
                 // Conditionally render the following ListItem based on clientConfig.isApp
@@ -1062,7 +1062,22 @@ export function Settings() {
                 </>
               )}
             </>
-          )}
+          )} */}
+          <ListItem
+            title={Locale.Settings.Access.OpenAI.ApiKey.Title}
+            subTitle={Locale.Settings.Access.OpenAI.ApiKey.SubTitle}
+          >
+            <PasswordInput
+              value={accessStore.openaiApiKey}
+              type="text"
+              placeholder={Locale.Settings.Access.OpenAI.ApiKey.Placeholder}
+              onChange={(e) => {
+                accessStore.update(
+                  (access) => (access.openaiApiKey = e.currentTarget.value),
+                );
+              }}
+            />
+          </ListItem>
 
           {!shouldHideBalanceQuery && !clientConfig?.isApp ? (
             <ListItem
